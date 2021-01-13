@@ -1,0 +1,47 @@
+:root{
+    --primary:#fff;
+    --color:#ccc;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(39, 12, 39);
+}
+.container{
+    width:100%;
+    height: 100%;
+}
+.container-box{
+    display: grid;
+    grid-template-rows: repeat(3,120px);
+}
+.main{
+    border-bottom: 2px solid grey;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    margin-left: 0;
+    height: 100%;
+}
+.main:hover{
+    background-color: rgb(39, 2, 39);
+    transition: all 0.2s;
+}
+#main1, #main2, #main3{
+   background: none;
+   border: none;
+   color: var(--primary);
+   cursor: pointer;
+   padding: 10px;
+} 
+#main1:hover{
+    color:var(--color);
+}
+#main2:hover{
+    color:var(--color);
+}
+#main3:hover{
+    color:var(--color);
+}
